@@ -1,0 +1,63 @@
+k# Nmap 7.95 scan initiated Tue Sep 23 02:05:20 2025 as: /usr/lib/nmap/nmap -sS -oN scan_results.txt 192.168.1.0/24
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+Nmap scan report for 192.168.***
+Host is up (0.0035s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE    SERVICE
+53/tcp   open     domain
+80/tcp   open     http
+5555/tcp filtered freeciv
+MAC Address: BC:62:D2:****** (Genexis International)
+
+Nmap scan report for 192.168***
+Host is up (0.0054s latency).
+All 1000 scanned ports on 192.168.1.2 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 62:02:33****** (Unknown)
+
+Nmap scan report for 192.168***
+Host is up (0.0044s latency).
+All 1000 scanned ports on 192.168*** are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: BE:84:7F:****** (Unknown)
+
+Nmap scan report for 192.168***
+Host is up (0.0062s latency).
+All 1000 scanned ports on 192.16***** are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 5E:7E:C6:4****** (Unknown)
+
+Nmap scan report for 192.168***
+Host is up (0.013s latency).
+All 1000 scanned ports on 192.168.*** are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 02:62:D8****** (Unknown)
+
+Nmap scan report for 192.168***
+Host is up (0.00055s latency).
+All 1000 scanned ports on 192.168.*** are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 14:AC:60:****** (Cloud Network Technology Singapore PTE.)
+
+Nmap scan report for 192.168.***
+Host is up (0.028s latency).
+All 1000 scanned ports on 192.168.*** are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: CA:72:C2:****** (Unknown)
+
+Nmap scan report for 192.168***
+Host is up (0.000021s latency).
+All 1000 scanned ports on 192.168.*** are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+# Nmap done at Tue Sep 23 02:06:27 2025 -- 256 IP addresses (8 hosts up) scanned in 66.45 seconds
+
