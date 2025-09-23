@@ -1,2 +1,61 @@
 Report: A markdown file (report.md) summarizing phishing indicators.
 Email Sample: The email text or headers (sanitized, no real malicious content).
+# Phishing Email Analysis Report
+
+## Objective
+
+Analyze a sample phishing email to identify characteristics of phishing attacks.
+
+## Tools Used
+
+- Email Client: Gmail (for viewing email and headers)
+- Header Analyzer: MXToolbox (https://mxtoolbox.com/EmailHeaders.aspx)
+- URL Scanner: VirusTotal (https://www.virustotal.com/)
+
+## Sample Email Details
+
+- **Source**: Sample phishing email from PhishTank.
+- **Subject**: "Urgent: Your PayPal Account is Suspended!"
+- **Sender**: `support@paypa1.com`
+
+## Phishing Indicators Found
+
+1. **Sender’s Email Address (Spoofing)**:
+
+   - The sender’s address `support@paypa1.com` mimics `support@paypal.com` but uses a "1" instead of "l".
+   - This is a common spoofing tactic to trick users into believing the email is legitimate.
+
+2. **Email Header Discrepancies**:
+
+   - Analyzed headers using MXToolbox.
+   - The "Received" field showed the email originated from an IP (`192.0.2.1`) not associated with PayPal’s official mail servers.
+   - SPF record failed, indicating the sender domain is not authorized.
+
+3. **Suspicious Links**:
+
+   - Email contained a link labeled "Verify Your Account."
+   - Hovering revealed the actual URL: `http://paypa1.com/login`.
+   - VirusTotal flagged the URL as malicious.
+
+4. **Suspicious Attachments**:
+
+   - No attachments were present in this sample.
+
+5. **Urgent or Threatening Language**:
+
+   - The email used phrases like “Your account will be locked in 24 hours!” and “Click here immediately to verify.”
+   - This creates urgency to manipulate the recipient into acting quickly.
+
+6. **Mismatched URLs**:
+
+   - The displayed link text (“Verify Your Account”) did not match the actual URL (`http://paypa1.com/login`).
+   - Legitimate emails typically use consistent, official domains.
+
+7. **Spelling/Grammar Errors**:
+
+   - Found typos: “verifiy” instead of “verify” and “acount” instead of “account.”
+   - Inconsistent formatting (e.g., mixed fonts) was observed.
+
+## Summary
+
+The email exhibits multiple phishing traits: a spoofed sender address, header discrepancies, a malicious link, urgent language, mismatched URLs, and spelling errors. These indicate an attempt to steal user credentials via social engineering.
