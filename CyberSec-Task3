@@ -1,0 +1,24 @@
+# Cyber Security Internship: Task 3 - Vulnerability Scan
+
+## Overview
+This repository contains the deliverables for Task 3 of the Cyber Security Internship. The task involved performing a vulnerability scan on the local machine (`192.168.1.12`) using Nessus Essentials to identify security risks.
+
+## Tools Used
+- Nessus Essentials (free vulnerability scanner).
+- Target: `192.168.1.12` (local Linux machine).
+
+## Files
+- `report.md`: Detailed vulnerability scan report with findings and mitigations.
+- `scan_results.txt`: Raw Nessus scan output for the SMB Signing Not Required vulnerability.
+- `screenshots/smb_vulnerability_screenshot.png`: Screenshot of the SMB Signing Not Required vulnerability details.
+
+## Key Findings
+- Identified a critical vulnerability: SMB Signing Not Required (Plugin ID: 57608).
+- Mitigation: Enable `server signing = mandatory` in `/etc/samba/smb.conf` and restart Samba service.
+
+## Challenges
+- Ensured screenshot was clear and legible by using a high-contrast theme in VS Code.
+- Verified Samba configuration steps for Linux compatibility.
+
+## Submission
+Submitted as part of the Cyber Security Internship on September 25, 2025.
